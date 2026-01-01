@@ -38,7 +38,7 @@ export function Footer() {
               <div className="w-10 h-10 rounded-lg bg-gradient-primary flex items-center justify-center">
                 <span className="text-primary-foreground font-bold text-xl">N</span>
               </div>
-              <span className="text-xl font-bold text-foreground">Nexus</span>
+              <span className="text-xl font-bold text-foreground">Nexoria</span>
             </a>
             <p className="text-muted-foreground mb-6 max-w-sm">
               Votre partenaire de confiance pour une stratégie digitale qui génère des résultats concrets et durables.
@@ -112,7 +112,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            © 2024 Nexus Digital. Tous droits réservés.
+            © 2024 Nexoria. Tous droits réservés.
           </p>
           <p className="text-sm text-muted-foreground">
             Fait avec ❤️ à Paris

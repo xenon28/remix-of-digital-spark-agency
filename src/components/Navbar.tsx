@@ -21,7 +21,7 @@ export function Navbar() {
             <div className="w-10 h-10 rounded-lg bg-gradient-primary flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-xl">N</span>
             </div>
-            <span className="text-xl font-bold text-foreground">Nexus</span>
+            <span className="text-xl font-bold text-foreground">Nexoria</span>
           </a>
 
           {/* Desktop Navigation */}
