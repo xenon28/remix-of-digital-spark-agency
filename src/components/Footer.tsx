@@ -115,7 +115,7 @@ export function Footer() {
             © 2024 Nexoria. Tous droits réservés.
           </p>
           <p className="text-sm text-muted-foreground">
-            Fait avec ❤️ à Paris
+            Fait avec ❤️ à Durbuy
           </p>
         </div>
       </div>
