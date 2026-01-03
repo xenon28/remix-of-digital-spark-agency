@@ -47,7 +47,7 @@ export function ContactSection() {
                   </div>
                   <div className="text-left">
                     <div className="text-xs text-muted-foreground">Email</div>
-                    <div className="text-sm font-medium text-foreground">contact@nexus.fr</div>
+                    <div className="text-sm font-medium text-foreground">contact@nexoria.com</div>
                   </div>
                 </div>
                 <div className="flex items-center justify-center gap-3">
@@ -56,7 +56,7 @@ export function ContactSection() {
                   </div>
                   <div className="text-left">
                     <div className="text-xs text-muted-foreground">Téléphone</div>
-                    <div className="text-sm font-medium text-foreground">+33 1 23 45 67 89</div>
+                    <div className="text-sm font-medium text-foreground">+32 123 45 67 89</div>
                   </div>
                 </div>
                 <div className="flex items-center justify-center gap-3">
@@ -65,7 +65,7 @@ export function ContactSection() {
                   </div>
                   <div className="text-left">
                     <div className="text-xs text-muted-foreground">Adresse</div>
-                    <div className="text-sm font-medium text-foreground">Paris, France</div>
+                    <div className="text-sm font-medium text-foreground">Durbuy, Belgique</div>
                   </div>
                 </div>
               </div>

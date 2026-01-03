@@ -25,7 +25,7 @@ export function HeroSection() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-muted/50 border border-border/50 mb-8 animate-fade-up opacity-0" style={{ animationDelay: '100ms', animationFillMode: 'forwards' }}>
             <Sparkles className="w-4 h-4 text-primary" />
-            <span className="text-sm text-muted-foreground">Agence de Marketing Digital #1 en France</span>
+            <span className="text-sm text-muted-foreground">Votre nouvelle agence de marketing digital</span>
           </div>
 
           {/* Main Headline */}
@@ -41,30 +41,12 @@ export function HeroSection() {
             Stratégies innovantes, résultats mesurables. Nous transformons votre présence en ligne en une machine à générer des leads et des ventes.
           </p>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up opacity-0" style={{ animationDelay: '400ms', animationFillMode: 'forwards' }}>
+          {/* CTA Button */}
+          <div className="flex items-center justify-center animate-fade-up opacity-0" style={{ animationDelay: '400ms', animationFillMode: 'forwards' }}>
             <Button variant="hero" size="xl">
               Obtenir un audit gratuit
               <ArrowRight className="w-5 h-5" />
             </Button>
-            <Button variant="heroOutline" size="xl">
-              Voir nos réalisations
-            </Button>
-          </div>
-
-          {/* Trust Indicators */}
-          <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 animate-fade-up opacity-0" style={{ animationDelay: '500ms', animationFillMode: 'forwards' }}>
-            {[
-              { value: "150+", label: "Clients satisfaits" },
-              { value: "€2M+", label: "Budget géré" },
-              { value: "340%", label: "ROI moyen" },
-              { value: "5⭐", label: "Note clients" },
-            ].map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-foreground">{stat.value}</div>
-                <div className="text-sm text-muted-foreground mt-1">{stat.label}</div>
-              </div>
-            ))}
           </div>
         </div>
       </div>

@@ -5,8 +5,8 @@ const features = [
   "Équipe d'experts certifiés Google & Meta",
   "Approche data-driven et transparente",
   "Stratégies personnalisées à vos objectifs",
-  "Support dédié et réactif 7j/7",
-  "Reporting mensuel détaillé",
+  "Support dédié et réactif",
+  "Reporting détaillé",
   "Technologies et outils de pointe",
 ];
 
@@ -25,7 +25,7 @@ export function AboutSection() {
               <span className="text-gradient">comprend</span> vos enjeux
             </h2>
             <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-              Depuis 2018, nous accompagnons les entreprises ambitieuses dans leur transformation digitale. Notre approche combine créativité, expertise technique et analyse de données pour des résultats exceptionnels.
+              Nous accompagnons les entreprises ambitieuses dans leur transformation digitale. Notre approche combine créativité, expertise technique et analyse de données pour des résultats exceptionnels.
             </p>
 
             {/* Features List */}
@@ -47,38 +47,29 @@ export function AboutSection() {
           <div className="relative">
             {/* Main Card */}
             <div className="card-glass rounded-3xl p-8 relative z-10">
-              <div className="grid grid-cols-2 gap-6">
-                {/* Stat Cards */}
-                <div className="bg-muted/50 rounded-2xl p-6 text-center">
-                  <div className="text-3xl font-bold text-gradient mb-2">6+</div>
-                  <div className="text-sm text-muted-foreground">Années d'expérience</div>
-                </div>
-                <div className="bg-muted/50 rounded-2xl p-6 text-center">
-                  <div className="text-3xl font-bold text-gradient-secondary mb-2">30+</div>
-                  <div className="text-sm text-muted-foreground">Experts passionnés</div>
-                </div>
-                <div className="bg-muted/50 rounded-2xl p-6 text-center">
-                  <div className="text-3xl font-bold text-gradient mb-2">98%</div>
-                  <div className="text-sm text-muted-foreground">Clients satisfaits</div>
-                </div>
-                <div className="bg-muted/50 rounded-2xl p-6 text-center">
-                  <div className="text-3xl font-bold text-gradient-secondary mb-2">24/7</div>
-                  <div className="text-sm text-muted-foreground">Support disponible</div>
-                </div>
-              </div>
-
-              {/* Testimonial Preview */}
-              <div className="mt-6 p-6 bg-primary/5 rounded-2xl border border-primary/20">
-                <p className="text-foreground italic mb-4">
-                  "Nexus a transformé notre stratégie digitale. Les résultats ont dépassé toutes nos attentes."
+              <div className="text-center">
+                <h3 className="text-2xl font-bold text-foreground mb-4">
+                  Notre <span className="text-gradient">Mission</span>
+                </h3>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  Aider les entreprises à atteindre leur plein potentiel digital grâce à des stratégies marketing innovantes et personnalisées.
                 </p>
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-gradient-primary flex items-center justify-center text-primary-foreground font-bold">
-                    M
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="bg-muted/50 rounded-2xl p-6 text-center">
+                    <div className="text-primary text-3xl mb-2">🎯</div>
+                    <div className="text-sm text-muted-foreground">Stratégie sur-mesure</div>
                   </div>
-                  <div>
-                    <div className="text-sm font-semibold text-foreground">Marie Dubois</div>
-                    <div className="text-xs text-muted-foreground">CEO, TechStart</div>
+                  <div className="bg-muted/50 rounded-2xl p-6 text-center">
+                    <div className="text-secondary text-3xl mb-2">📈</div>
+                    <div className="text-sm text-muted-foreground">Croissance durable</div>
+                  </div>
+                  <div className="bg-muted/50 rounded-2xl p-6 text-center">
+                    <div className="text-accent text-3xl mb-2">💡</div>
+                    <div className="text-sm text-muted-foreground">Innovation continue</div>
+                  </div>
+                  <div className="bg-muted/50 rounded-2xl p-6 text-center">
+                    <div className="text-primary text-3xl mb-2">🤝</div>
+                    <div className="text-sm text-muted-foreground">Partenariat de confiance</div>
                   </div>
                 </div>
               </div>

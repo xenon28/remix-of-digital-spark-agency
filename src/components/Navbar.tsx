@@ -40,7 +40,7 @@ export function Navbar() {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Button variant="hero" size="default">
-              Démarrer un projet
+              Nous contacter
             </Button>
           </div>
 
@@ -68,7 +68,7 @@ export function Navbar() {
                 </a>
               ))}
               <Button variant="hero" size="default" className="mt-2">
-                Démarrer un projet
+                Nous contacter
               </Button>
             </div>
           </div>
