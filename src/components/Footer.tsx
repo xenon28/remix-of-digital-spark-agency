@@ -29,18 +29,15 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-card border-t border-border">
+    <footer className="bg-background border-t border-border">
       <div className="container mx-auto px-4 py-12 md:py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
           {/* Brand */}
           <div className="lg:col-span-2">
             <a href="#" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-gradient-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-xl">N</span>
-              </div>
               <span className="text-xl font-bold text-foreground">Nexoria</span>
             </a>
-            <p className="text-muted-foreground mb-6 max-w-sm">
+            <p className="text-muted-foreground mb-6 max-w-sm text-sm">
               Votre partenaire de confiance pour une stratégie digitale qui génère des résultats concrets et durables.
             </p>
             <div className="flex gap-3">
@@ -49,9 +46,9 @@ export function Footer() {
                   key={index}
                   href={social.href}
                   aria-label={social.label}
-                  className="w-10 h-10 rounded-lg bg-muted flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                  className="w-9 h-9 rounded-md bg-muted flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-200"
                 >
-                  <social.icon className="w-5 h-5" />
+                  <social.icon className="w-4 h-4" />
                 </a>
               ))}
             </div>
@@ -59,13 +56,13 @@ export function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="font-semibold text-foreground mb-4">Services</h4>
+            <h4 className="font-semibold text-foreground mb-4 text-sm">Services</h4>
             <ul className="space-y-3">
               {footerLinks.services.map((link) => (
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="text-muted-foreground hover:text-foreground transition-colors duration-300 text-sm"
+                    className="text-muted-foreground hover:text-foreground transition-colors duration-200 text-sm"
                   >
                     {link.name}
                   </a>
@@ -76,13 +73,13 @@ export function Footer() {
 
           {/* Company */}
           <div>
-            <h4 className="font-semibold text-foreground mb-4">Entreprise</h4>
+            <h4 className="font-semibold text-foreground mb-4 text-sm">Entreprise</h4>
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="text-muted-foreground hover:text-foreground transition-colors duration-300 text-sm"
+                    className="text-muted-foreground hover:text-foreground transition-colors duration-200 text-sm"
                   >
                     {link.name}
                   </a>
@@ -93,13 +90,13 @@ export function Footer() {
 
           {/* Legal */}
           <div>
-            <h4 className="font-semibold text-foreground mb-4">Légal</h4>
+            <h4 className="font-semibold text-foreground mb-4 text-sm">Légal</h4>
             <ul className="space-y-3">
               {footerLinks.legal.map((link) => (
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="text-muted-foreground hover:text-foreground transition-colors duration-300 text-sm"
+                    className="text-muted-foreground hover:text-foreground transition-colors duration-200 text-sm"
                   >
                     {link.name}
                   </a>
@@ -115,7 +112,7 @@ export function Footer() {
             © 2024 Nexoria. Tous droits réservés.
           </p>
           <p className="text-sm text-muted-foreground">
-            Fait avec ❤️ à Durbuy
+            Durbuy, Belgique
           </p>
         </div>
       </div>
