@@ -1,4 +1,5 @@
 import { Linkedin, Twitter, Instagram, Facebook } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const footerLinks = {
   services: [
@@ -8,10 +9,10 @@ const footerLinks = {
     { name: "Content Marketing", href: "#" },
   ],
   company: [
-    { name: "À propos", href: "#about" },
+    { name: "Blog", href: "#blog" },
     { name: "Équipe", href: "#" },
     { name: "Carrières", href: "#" },
-    { name: "Blog", href: "#" },
+    { name: "Contact", href: "#contact" },
   ],
   legal: [
     { name: "Mentions légales", href: "#" },
@@ -29,15 +30,18 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-background border-t border-border">
-      <div className="container mx-auto px-4 py-12 md:py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
+    <footer className="bg-card border-t border-border">
+      <div className="container mx-auto px-4 py-16 md:py-20">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-12">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <a href="#" className="flex items-center gap-2 mb-4">
+            <Link to="/" className="flex items-center gap-2 mb-6">
+              <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
+                <span className="text-primary-foreground font-bold text-sm">N</span>
+              </div>
               <span className="text-xl font-bold text-foreground">Nexoria</span>
-            </a>
-            <p className="text-muted-foreground mb-6 max-w-sm text-sm">
+            </Link>
+            <p className="text-muted-foreground mb-8 max-w-sm leading-relaxed">
               Votre partenaire de confiance pour une stratégie digitale qui génère des résultats concrets et durables.
             </p>
             <div className="flex gap-3">
@@ -46,7 +50,7 @@ export function Footer() {
                   key={index}
                   href={social.href}
                   aria-label={social.label}
-                  className="w-9 h-9 rounded-md bg-muted flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-200"
+                  className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-300"
                 >
                   <social.icon className="w-4 h-4" />
                 </a>
@@ -56,13 +60,13 @@ export function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="font-semibold text-foreground mb-4 text-sm">Services</h4>
+            <h4 className="font-semibold text-foreground mb-5">Services</h4>
             <ul className="space-y-3">
               {footerLinks.services.map((link) => (
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="text-muted-foreground hover:text-foreground transition-colors duration-200 text-sm"
+                    className="text-muted-foreground hover:text-primary transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -73,13 +77,13 @@ export function Footer() {
 
           {/* Company */}
           <div>
-            <h4 className="font-semibold text-foreground mb-4 text-sm">Entreprise</h4>
+            <h4 className="font-semibold text-foreground mb-5">Entreprise</h4>
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="text-muted-foreground hover:text-foreground transition-colors duration-200 text-sm"
+                    className="text-muted-foreground hover:text-primary transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -90,13 +94,13 @@ export function Footer() {
 
           {/* Legal */}
           <div>
-            <h4 className="font-semibold text-foreground mb-4 text-sm">Légal</h4>
+            <h4 className="font-semibold text-foreground mb-5">Légal</h4>
             <ul className="space-y-3">
               {footerLinks.legal.map((link) => (
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="text-muted-foreground hover:text-foreground transition-colors duration-200 text-sm"
+                    className="text-muted-foreground hover:text-primary transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -107,7 +111,7 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
             © 2024 Nexoria. Tous droits réservés.
           </p>
