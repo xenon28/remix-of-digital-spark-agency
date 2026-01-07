@@ -5,11 +5,11 @@ import { ArrowLeft, Sun, Moon } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Switch } from "@/components/ui/switch";
 
-// Images URLs - hosted externally
-const mckinseyGraph = "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=600&fit=crop";
-const jasperScreenshot = "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=800&fit=crop";
-const ubersuggestScreenshot = "https://images.unsplash.com/photo-1432888622747-4eb9a8f2f6ed?w=1200&h=800&fit=crop";
-const nanoBananaScreenshot = "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=1200&h=800&fit=crop";
+// Images from public folder - user provided screenshots
+const mckinseyGraph = "/images/Capture d'écran 2026-01-06 à 22.27.31.png";
+const jasperScreenshot = "/images/Capture d'écran 2026-01-06 à 22.30.51.png";
+const ubersuggestScreenshot = "/images/Capture d'écran 2026-01-06 à 22.35.49.png";
+const nanoBananaScreenshot = "/images/Capture d'écran 2026-01-06 à 23.03.13.png";
 const tableOfContents = [
   { id: "introduction", label: "Introduction" },
   { id: "jasper-ai", label: "1. Jasper AI" },
