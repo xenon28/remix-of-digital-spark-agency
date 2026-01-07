@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { ArrowLeft, Sun, Moon, ImageIcon } from "lucide-react";
+import { ArrowLeft, Sun, Moon } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Switch } from "@/components/ui/switch";
 
-// Placeholder URLs - Replace with actual uploaded images
-const mckinseyGraph = "/placeholder.svg";
-const jasperScreenshot = "/placeholder.svg";
-const ubersuggestScreenshot = "/placeholder.svg";
-const nanoBananaScreenshot = "/placeholder.svg";
+// Import images
+import mckinseyGraph from "@/assets/mckinsey-graph.png";
+import jasperScreenshot from "@/assets/jasper-screenshot.png";
+import ubersuggestScreenshot from "@/assets/ubersuggest-screenshot.png";
+import nanoBananaScreenshot from "@/assets/nanobanana-screenshot.png";
 const tableOfContents = [
   { id: "introduction", label: "Introduction" },
   { id: "jasper-ai", label: "1. Jasper AI" },
