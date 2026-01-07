@@ -1,4 +1,4 @@
-import { Search, Share2, PenTool, BarChart3, Target, Zap } from "lucide-react";
+import { Search, Share2, PenTool, BarChart3, Target, Zap, GraduationCap } from "lucide-react";
 
 const services = [
   {
@@ -33,6 +33,12 @@ const services = [
   },
 ];
 
+const formationService = {
+  icon: GraduationCap,
+  title: "Formation",
+  description: "Formez vos équipes aux derniers outils IA et aux meilleures pratiques du marketing digital pour maximiser leur efficacité.",
+};
+
 export function ServicesSection() {
   return (
     <section id="services" className="py-24 md:py-32 relative">
@@ -51,7 +57,7 @@ export function ServicesSection() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
           {services.map((service, index) => (
             <div
               key={index}
@@ -71,6 +77,33 @@ export function ServicesSection() {
               </p>
             </div>
           ))}
+        </div>
+
+        {/* Formation Section - Featured */}
+        <div id="formation" className="scroll-mt-24">
+          <div className="group bg-gradient-to-r from-primary/10 to-primary/5 rounded-xl border-2 border-primary/30 p-8 hover-lift cursor-pointer hover:border-primary/50 transition-colors duration-300">
+            <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
+              {/* Icon */}
+              <div className="w-16 h-16 rounded-xl bg-primary/20 flex items-center justify-center group-hover:bg-primary/30 group-hover:scale-110 transition-all duration-300 flex-shrink-0">
+                <formationService.icon className="w-8 h-8 text-primary" />
+              </div>
+
+              {/* Content */}
+              <div className="flex-1">
+                <h3 className="text-2xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors duration-200">
+                  {formationService.title}
+                </h3>
+                <p className="text-muted-foreground leading-relaxed text-lg">
+                  {formationService.description}
+                </p>
+              </div>
+
+              {/* CTA Badge */}
+              <div className="px-4 py-2 bg-primary/20 rounded-full text-primary font-semibold text-sm flex-shrink-0">
+                Nouveau
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
