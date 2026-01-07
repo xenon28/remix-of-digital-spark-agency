@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 import { Switch } from "@/components/ui/switch";
 
 // Images from public folder - user provided screenshots
-const mckinseyGraph = "/images/Capture d'écran 2026-01-06 à 22.27.31.png";
-const jasperScreenshot = "/images/Capture d'écran 2026-01-06 à 22.30.51.png";
-const ubersuggestScreenshot = "/images/Capture d'écran 2026-01-06 à 22.35.49.png";
-const nanoBananaScreenshot = "/images/Capture d'écran 2026-01-06 à 23.03.13.png";
+const mckinseyGraph = "/images/mckinsey-graph.png";
+const jasperScreenshot = "/images/jasper-screenshot.png";
+const ubersuggestScreenshot = "/images/ubersuggest-screenshot.png";
+const nanoBananaScreenshot = "/images/nanobanana-screenshot.png";
 const tableOfContents = [
   { id: "introduction", label: "Introduction" },
   { id: "jasper-ai", label: "1. Jasper AI" },
