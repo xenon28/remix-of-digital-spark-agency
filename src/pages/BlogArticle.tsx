@@ -5,11 +5,11 @@ import { ArrowLeft, Sun, Moon } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Switch } from "@/components/ui/switch";
 
-// Import images
-import mckinseyGraph from "@/assets/mckinsey-graph.png";
-import jasperScreenshot from "@/assets/jasper-screenshot.png";
-import ubersuggestScreenshot from "@/assets/ubersuggest-screenshot.png";
-import nanoBananaScreenshot from "@/assets/nanobanana-screenshot.png";
+// Images URLs - hosted externally
+const mckinseyGraph = "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=600&fit=crop";
+const jasperScreenshot = "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=800&fit=crop";
+const ubersuggestScreenshot = "https://images.unsplash.com/photo-1432888622747-4eb9a8f2f6ed?w=1200&h=800&fit=crop";
+const nanoBananaScreenshot = "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=1200&h=800&fit=crop";
 const tableOfContents = [
   { id: "introduction", label: "Introduction" },
   { id: "jasper-ai", label: "1. Jasper AI" },
