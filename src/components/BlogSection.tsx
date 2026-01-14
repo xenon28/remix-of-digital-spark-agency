@@ -33,7 +33,7 @@ export function BlogSection() {
                   </span>
                 </div>
                 <h3 className="text-xl md:text-2xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors">
-                  Les 5 outils IA en marketing digital indispensables en 2026
+                  Digital marketing : c'est quoi les 5 outils IA indispensable en 2026
                 </h3>
                 <p className="text-muted-foreground leading-relaxed mb-6">
                   Découvrez les outils d'intelligence artificielle qui transforment le marketing digital : Jasper AI, Ubersuggest, Kling, Lovable et Nano Banana.
