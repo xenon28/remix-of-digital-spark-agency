@@ -92,7 +92,7 @@ export default function BlogArticle() {
                 </span>
               </div>
               <h1 className={`text-3xl md:text-4xl lg:text-5xl font-bold leading-tight ${isLightMode ? 'text-gray-900' : 'text-foreground'}`}>
-                Les 5 outils IA en marketing digital indispensables en 2026
+                Digital marketing : c'est quoi les 5 outils IA indispensable en 2026
               </h1>
             </div>
           </div>
